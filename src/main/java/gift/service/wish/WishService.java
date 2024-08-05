@@ -22,7 +22,6 @@ public class WishService {
     private final WishRepository wishRepository;
     private final ProductRepository productRepository;
 
-    @Autowired
     public WishService(WishRepository wishRepository, ProductRepository productRepository) {
         this.wishRepository = wishRepository;
         this.productRepository = productRepository;

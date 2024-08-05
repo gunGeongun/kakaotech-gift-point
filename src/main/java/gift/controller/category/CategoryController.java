@@ -13,7 +13,6 @@ public class CategoryController implements CategorySpecification {
 
     private final CategoryService categoryService;
 
-    @Autowired
     public CategoryController(CategoryService categoryService) {
         this.categoryService = categoryService;
     }

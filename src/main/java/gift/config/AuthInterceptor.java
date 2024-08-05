@@ -11,9 +11,9 @@ import org.springframework.web.servlet.HandlerInterceptor;
 
 @Component
 public class AuthInterceptor implements HandlerInterceptor {
+
     private final UserService userService;
 
-    @Autowired
     public AuthInterceptor(UserService userService) {
         this.userService = userService;
     }

@@ -17,7 +17,6 @@ public class WishListController implements WishListSpecification {
 
     private final WishService wishService;
 
-    @Autowired
     public WishListController(WishService wishService) {
         this.wishService = wishService;
     }

@@ -22,7 +22,6 @@ public class OptionService {
     private final OptionRepository optionRepository;
     private final ProductRepository productRepository;
 
-    @Autowired
     public OptionService(OptionRepository optionRepository, ProductRepository productRepository) {
         this.optionRepository = optionRepository;
         this.productRepository = productRepository;

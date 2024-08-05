@@ -15,7 +15,6 @@ public class UserController implements UserSpecification {
 
     private final UserService userService;
 
-    @Autowired
     public UserController(UserService userService) {
         this.userService = userService;
     }

@@ -21,7 +21,6 @@ public class KakaoApiCaller {
     private final KakaoProperties kakaoProperties;
     private final RestClient restClient;
 
-    @Autowired
     public KakaoApiCaller(KakaoProperties kakaoProperties, RestClient restClient) {
         this.kakaoProperties = kakaoProperties;
         this.restClient = restClient;

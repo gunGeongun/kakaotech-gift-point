@@ -16,7 +16,7 @@ public class KakaoAuthController implements KakaoAuthSpecification {
 
     private final KakaoAuthService kakaoAuthService;
 
-    @Autowired
+
     public KakaoAuthController(KakaoAuthService kakaoAuthService) {
         this.kakaoAuthService = kakaoAuthService;
     }

@@ -14,7 +14,6 @@ public class OptionController implements OptionSpecification {
 
     private final OptionService optionService;
 
-    @Autowired
     public OptionController(OptionService optionService) {
         this.optionService = optionService;
     }

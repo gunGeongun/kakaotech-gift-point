@@ -12,7 +12,6 @@ public class WebConfig implements WebMvcConfigurer {
     private final AuthInterceptor authInterceptor;
 
 
-    @Autowired
     public WebConfig(AuthInterceptor authInterceptor) {
         this.authInterceptor = authInterceptor;
     }

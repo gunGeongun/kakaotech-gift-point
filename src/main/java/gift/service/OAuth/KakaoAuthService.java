@@ -20,7 +20,6 @@ public class KakaoAuthService {
     private final UserRepository userRepository;
     private final OAuthTokenRepository OAuthTokenRepository;
 
-    @Autowired
     public KakaoAuthService(KakaoApiCaller kakaoApiCaller, JwtUtil jwtUtil, UserRepository userRepository, OAuthTokenRepository OAuthTokenRepository) {
         this.kakaoApiCaller = kakaoApiCaller;
         this.jwtUtil = jwtUtil;

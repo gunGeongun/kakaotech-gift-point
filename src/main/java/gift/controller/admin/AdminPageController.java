@@ -25,7 +25,6 @@ public class AdminPageController {
     private final CategoryService categoryService;
     private final OptionService optionService;
 
-    @Autowired
     public AdminPageController(ProductService productService, CategoryService categoryService, OptionService optionService) {
         this.productService = productService;
         this.categoryService = categoryService;
