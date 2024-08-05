@@ -92,20 +92,20 @@ public class User {
         }
     }
 
-    public void isAdmin(){
-        if(this.role != Role.ADMIN){
+    public void isAdmin() {
+        if (this.role != Role.ADMIN) {
             throw new NotAdminException("Forbidden");
         }
     }
 
-    public void subtractPoint(int point){
-        if(this.point < point){
+    public void subtractPoint(int point) {
+        if (this.point < point) {
             throw new LackPointException("포인트가 부족합니다.");
         }
         this.point -= point;
     }
 
-    public void addPoint(int depositPoint){
+    public void addPoint(int depositPoint) {
         this.point += depositPoint;
     }
 

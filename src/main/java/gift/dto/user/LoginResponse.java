@@ -6,7 +6,7 @@ public class LoginResponse {
     public record Info(
             String name,
             Role role
-    ){
+    ) {
 
     }
 }

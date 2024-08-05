@@ -7,7 +7,6 @@ import gift.exception.AuthenticationException;
 import gift.model.user.User;
 import gift.repository.user.UserRepository;
 import gift.util.JwtUtil;
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 @Service

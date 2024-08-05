@@ -12,7 +12,6 @@ import gift.model.product.Product;
 import gift.repository.category.CategoryRepository;
 import gift.repository.option.OptionRepository;
 import gift.repository.product.ProductRepository;
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.domain.*;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;

@@ -4,7 +4,6 @@ import gift.model.user.User;
 import gift.service.user.UserService;
 import jakarta.servlet.http.HttpServletRequest;
 import jakarta.servlet.http.HttpServletResponse;
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpMethod;
 import org.springframework.stereotype.Component;
 import org.springframework.web.servlet.HandlerInterceptor;
@@ -20,7 +19,7 @@ public class AuthInterceptor implements HandlerInterceptor {
 
     @Override
     public boolean preHandle(HttpServletRequest request, HttpServletResponse response, Object handler) throws Exception {
-        if(HttpMethod.valueOf(request.getMethod()).equals(HttpMethod.OPTIONS)){
+        if (HttpMethod.valueOf(request.getMethod()).equals(HttpMethod.OPTIONS)) {
             return true;
         }
         String authHeader = request.getHeader("Authorization");

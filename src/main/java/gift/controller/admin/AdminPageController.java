@@ -11,7 +11,6 @@ import gift.service.category.CategoryService;
 import gift.service.option.OptionService;
 import gift.service.product.ProductService;
 import jakarta.validation.Valid;
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.*;

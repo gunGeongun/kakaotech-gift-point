@@ -9,7 +9,6 @@ import gift.repository.token.OAuthTokenRepository;
 import gift.repository.user.UserRepository;
 import gift.util.JwtUtil;
 import gift.util.KakaoApiCaller;
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 @Service

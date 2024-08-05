@@ -8,9 +8,9 @@ public class UserResponse {
             String email,
             String name,
             int point
-    ){
-        public static Info fromEntity(User user){
-            return new Info(user.getId(),user.getEmail(), user.getName(), user.getPoint());
+    ) {
+        public static Info fromEntity(User user) {
+            return new Info(user.getId(), user.getEmail(), user.getName(), user.getPoint());
         }
     }
 }

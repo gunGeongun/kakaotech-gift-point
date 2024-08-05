@@ -1,6 +1,5 @@
 package gift.config;
 
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.web.filter.HiddenHttpMethodFilter;
@@ -24,7 +23,7 @@ public class WebConfig implements WebMvcConfigurer {
     @Override
     public void addInterceptors(InterceptorRegistry registry) {
         registry.addInterceptor(authInterceptor)
-                .addPathPatterns("/api/admin/**","/api/wishes/**", "/api/orders/**", "/api/members/point");
+                .addPathPatterns("/api/admin/**", "/api/wishes/**", "/api/orders/**", "/api/members/point");
     }
 
     @Override

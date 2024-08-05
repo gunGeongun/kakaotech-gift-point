@@ -23,7 +23,7 @@ public class JwtUtil {
         try {
             Jwts.parser().setSigningKey(secretKey).parseClaimsJws(token);
             return true;
-        }  catch (SecurityException | MalformedJwtException e) {
+        } catch (SecurityException | MalformedJwtException e) {
             throw new JwtException("유효하지 않은 토큰입니다.");
         } catch (ExpiredJwtException e) {
             throw new JwtException("만료된 토큰입니다.");

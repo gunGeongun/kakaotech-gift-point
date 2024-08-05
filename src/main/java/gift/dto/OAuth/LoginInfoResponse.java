@@ -5,7 +5,7 @@ public class LoginInfoResponse {
 
             String name,
 
-            String token){
+            String token) {
 
     }
 }

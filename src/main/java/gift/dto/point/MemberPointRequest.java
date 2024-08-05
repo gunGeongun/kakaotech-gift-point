@@ -6,7 +6,7 @@ public class MemberPointRequest {
     public record Add(
             @NotNull
             Integer depositPoint
-    ){
+    ) {
 
     }
 }

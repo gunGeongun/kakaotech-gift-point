@@ -58,12 +58,14 @@ public class GlobalExceptionHandler {
         problemDetail.setDetail(ex.getMessage());
         return ResponseEntity.status(ex.getStatus()).body(problemDetail);
     }
+
     @ExceptionHandler(OutOfStockException.class)
     public ResponseEntity<ProblemDetail> handleOutOfStockException(OutOfStockException ex) {
         ProblemDetail problemDetail = ProblemDetail.forStatus(ex.getStatus());
         problemDetail.setDetail(ex.getMessage());
         return ResponseEntity.status(ex.getStatus()).body(problemDetail);
     }
+
     @ExceptionHandler(NotAdminException.class)
     public ResponseEntity<ProblemDetail> handleNotAdminException(NotAdminException ex) {
         ProblemDetail problemDetail = ProblemDetail.forStatus(ex.getStatus());

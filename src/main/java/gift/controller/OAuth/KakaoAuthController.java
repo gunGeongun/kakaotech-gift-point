@@ -3,7 +3,6 @@ package gift.controller.OAuth;
 import gift.dto.OAuth.LoginInfoResponse;
 import gift.service.OAuth.KakaoAuthService;
 import jakarta.servlet.http.HttpServletResponse;
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.*;
 import org.springframework.web.bind.annotation.*;
 

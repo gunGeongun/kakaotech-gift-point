@@ -6,7 +6,6 @@ import gift.dto.wish.WishRequest;
 import gift.dto.wish.WishResponse;
 import gift.model.user.User;
 import gift.service.wish.WishService;
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 

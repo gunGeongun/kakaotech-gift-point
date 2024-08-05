@@ -6,7 +6,6 @@ import gift.dto.product.ProductRequest;
 import gift.dto.product.ProductResponse;
 import gift.service.product.ProductService;
 import jakarta.validation.Valid;
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;

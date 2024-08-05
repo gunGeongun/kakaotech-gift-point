@@ -8,6 +8,7 @@ public class WishInvalidAuthException extends RuntimeException {
     public WishInvalidAuthException(String message) {
         super(message);
     }
+
     public HttpStatus getStatus() {
         return HttpStatus.BAD_REQUEST;
     }

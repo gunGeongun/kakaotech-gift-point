@@ -3,7 +3,6 @@ package gift.util;
 import gift.common.properties.KakaoProperties;
 import gift.dto.OAuth.*;
 import gift.exception.AuthenticationException;
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.MediaType;
 import org.springframework.stereotype.Component;
 import org.springframework.util.LinkedMultiValueMap;
@@ -41,7 +40,7 @@ public class KakaoApiCaller {
     public AuthTokenResponse getAccessToken(String authCode, String redirectUrl) {
         String url = kakaoProperties.tokenUrl();
         MultiValueMap<String, String> params = createParamsForAccessToken(authCode, redirectUrl);
-        try{
+        try {
             AuthTokenResponse resp = restClient.post()
                     .uri(URI.create(url))
                     .contentType(MediaType.APPLICATION_FORM_URLENCODED)
@@ -50,7 +49,7 @@ public class KakaoApiCaller {
                     .body(AuthTokenResponse.class);
 
             return resp;
-        }catch (HttpClientErrorException e) {
+        } catch (HttpClientErrorException e) {
             throw new AuthenticationException("유효하지 않은 인가코드입니다.");
         }
 
@@ -80,7 +79,7 @@ public class KakaoApiCaller {
         String email = (String) accountMap.get("email");
         Map<String, Object> profileMap = (Map<String, Object>) accountMap.get("profile");
         String nickname = (String) profileMap.get("nickname");
-        return new UserInfoResponse.Info(email,nickname);
+        return new UserInfoResponse.Info(email, nickname);
     }
 
     public String sendMessage(String accessToken, String text) {

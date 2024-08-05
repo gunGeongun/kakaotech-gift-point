@@ -2,8 +2,8 @@ package gift.dto.user;
 
 import gift.common.enums.LoginType;
 import gift.model.user.User;
-import io.swagger.v3.oas.annotations.media.Schema;
-import jakarta.validation.constraints.*;
+import jakarta.validation.constraints.Email;
+import jakarta.validation.constraints.NotBlank;
 
 public class UserRequest {
     public record Create(
