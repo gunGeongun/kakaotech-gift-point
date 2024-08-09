@@ -15,7 +15,6 @@ public class KakaoAuthController implements KakaoAuthSpecification {
 
     private final KakaoAuthService kakaoAuthService;
 
-
     public KakaoAuthController(KakaoAuthService kakaoAuthService) {
         this.kakaoAuthService = kakaoAuthService;
     }
